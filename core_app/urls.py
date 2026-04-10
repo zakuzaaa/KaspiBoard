@@ -5,6 +5,7 @@ urlpatterns = [
     # Главная страница и категории
     path('', views.ad_list_view, name='ad_list'),
     path('category/<slug:slug>/', views.ad_list_view, name='category_list'),
+    path('ad/success/', views.ad_created_view, name='ad_created'),
 
     # CRUD объявлений и избранное
     path('ad/new/', views.ad_create_view, name='ad_create'),
