@@ -20,7 +20,7 @@ def register_view(request):
             messages.success(request, 'Аккаунт создан! Теперь вы можете войти.')
             return redirect('login')
     else:
-        form = UserRegisterForm()
+        form = UserRegistrationForm()
     return render(request, 'register.html', {'form': form})
 
 def login_view(request):
