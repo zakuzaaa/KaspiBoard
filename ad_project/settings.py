@@ -120,5 +120,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+ALLOWED_HOSTS = ['zakuzaaa.pythonanywhere.com', '127.0.0.1']
+
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
